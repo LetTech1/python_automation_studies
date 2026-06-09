@@ -41,3 +41,61 @@ O `.venv` existe para servir o seu código, não para guardá-lo.
 
 # 4. Desativar quando terminar
 deactivate
+
+# Python — Conceitos Básicos
+
+## Variáveis
+
+Variáveis armazenam valores e não precisam de tipo declarado.
+
+```python
+nome = "Ana"
+idade = 30
+preco = 9.99
+ativo = True
+```
+
+---
+
+## Listas
+
+Estrutura ordenada e mutável que armazena múltiplos valores.
+
+```python
+frutas = ["maçã", "banana", "uva"]
+
+frutas.append("manga")   # adiciona
+frutas.remove("banana")  # remove
+frutas[0]                # acessa pelo índice
+```
+
+---
+
+## Funções
+
+Bloco de código reutilizável, definido com `def`.
+
+```python
+def somar(a, b):
+    return a + b
+
+resultado = somar(3, 5)  # 8
+```
+
+---
+
+## Dicionários
+
+Armazena dados em pares de **chave: valor**.
+
+```python
+pessoa = {
+    "nome": "Ana",
+    "idade": 30,
+    "cidade": "São Paulo"
+}
+
+pessoa["nome"]           # acessa
+pessoa["profissao"] = "Dev"  # adiciona
+del pessoa["cidade"]     # remove
+```
