@@ -13,19 +13,20 @@
 # print(todo)
 
 # Create a list
-todo = input("Enter ToDo: ")
-continuar = input("Continuar? [y/n]")
 all_todo = []
-i = 0
 
-print(todo)
-all_todo.append(todo)
-print(continuar)
-
-if continuar == "y":
-    print(todo)
+while True:
+    todo = input("Enter ToDo: ")
     all_todo.append(todo)
-    print(continuar)
-else:
-    for i in all_todo:
-        print(i)
+
+    continuar = input("Continuar? [y/n]: ")
+    if continuar == "n":
+        break
+
+print("\nSua lista:")
+for task in all_todo:
+    print("- ", task)
+
+
+
+
