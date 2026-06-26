@@ -13,11 +13,11 @@
 # print(todo)
 
 # Create a list
-all_todo = []
+# all_todo = []
 
 # Diferença entre capitalize e title é que capitalize deixa apenas a primeira letra em maiusculo
 # Já title deixa todas as primeira letras em maiusculo
-
+"""
 while True:
     todo = input("Enter ToDo: ")
     print(todo.capitalize())
@@ -30,7 +30,23 @@ while True:
 print("\nSua lista:")
 for task in all_todo:
     print("- ", task)
+"""
+#------------------------------
+todos = []
 
+while True:
+    user_action = input("Type add, show or exit: ")
+
+    match user_action:
+        case "add":
+            todo = input("Enter a to do: ")
+            todos.append(todo)
+        case "show":
+            print(todos)
+        case "exit":
+            break
+
+print("\nBye!")
 
 
 
