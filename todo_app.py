@@ -42,7 +42,10 @@ while True:
             todo = input("Enter a to do: ")
             todos.append(todo)
         case "show":
-            print(todos)
+            #improving the program output
+            #print(todos)
+            for item in todos:
+                print(item.capitalize())
         case "exit":
             break
 
